@@ -1,0 +1,100 @@
+.testimonial {
+    &__container {
+        background-color: rgba(0, 0, 0, 0.2901960784);
+    }
+    &__header {
+        text-align: center;
+        font-size: 2rem;
+        color: white;
+        margin-bottom: 4rem;
+        opacity: 1;
+    }
+    &__wrapper {
+        display: flex;
+        margin-bottom: 7rem;
+    }
+    &__feature {
+        background-color: white;
+        margin-left: 2rem;
+        height: fit-content;
+        opacity: 1;
+    }
+    &__content {
+        padding: 25px;
+        &__author {
+            display: flex;
+            i {
+                font-size: 30px;
+                color: #748BF7;
+            }
+        }
+        &__img-wrap {
+            display: flex;
+        }
+        &__image {
+            width: 30%;
+        }
+        &__author-name {
+            margin-left: 1rem;
+            display: flex;
+            flex-direction: column;
+        }
+        &__link {
+            font-size: 16px;
+            font-weight: 400;
+            text-decoration: none;
+        }
+        &__designation {
+            font-size: 13px;
+            font-weight: 400;
+        }
+        &__details {
+            font-size: 17px;
+            line-height: 25px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .testimonial {
+        &__content {
+            &__author {
+                justify-content: space-between;
+            }
+            &__img-wrap {
+                display: block;
+            }
+            &__image {
+                width: 50%;
+            }
+            &__author-name {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .testimonial {
+        &__wrapper {
+            display: block;
+        }
+        &__feature {
+            margin-left: 0;
+            margin-top: 2rem;
+        }
+        &__content {
+            &__img-wrap {
+                display: flex;
+            }
+            &__image {
+                width: 25%;
+            }
+            &__author-name {
+                margin-left: 1rem;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}

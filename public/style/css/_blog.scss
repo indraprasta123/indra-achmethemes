@@ -1,0 +1,105 @@
+.blog {
+    background-color: white;
+    &__header {
+        text-align: center;
+        font-size: 2rem;
+        opacity: 1;
+        margin-bottom: 4 rem;
+    }
+    &__feature {
+        margin-bottom: 6rem;
+    }
+    &__list {
+        display: flex;
+        padding: 20px 60px;
+    }
+    &__content-wrapper {
+        margin-right: 2rem;
+        background-color: #f3f8fc;
+        opacity: 1;
+        &:hover {
+            #zoomIn-imgBlog {
+                transform: scale(1.3);
+                transition: 0.4s ease-in;
+            }
+        }
+    }
+    &__img-wrap {
+        &__img-link {
+            overflow: hidden;
+            display: block;
+        }
+        &__image {
+            width: 100%;
+            height: 12rem;
+            transition: 0.4s ease-in;
+        }
+    }
+    &__entry-content {
+        padding: 15px 15px;
+        &__entry-header {
+            margin-bottom: -8px;
+        }
+        &__cat-links {
+            margin-left: 5px;
+            a {
+                color: #666;
+                text-decoration: none;
+                font-size: 13px;
+            }
+        }
+        &__entry-meta {
+            i {
+                color: #748BF7;
+            }
+        }
+        &__entry-link {
+            color: black;
+            font-size: 17px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        &__details {
+            font-size: 13px;
+            width: 95%;
+            line-height: 22px;
+            color: #666;
+        }
+        &__date {
+            margin-top: 20px;
+            font-size: 13px;
+            a {
+                color: #a6a6a6;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 975px) {
+    .blog__img-wrap__image {
+        height: 9rem;
+    }
+    .blog__list {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .blog {
+        &__list {
+            display: block;
+            padding: 0;
+        }
+        &__content-wrapper {
+            margin-right: 0;
+            margin-bottom: 5rem;
+        }
+        &__img-wrap {
+            &__image {
+                height: auto;
+                width: 100%;
+            }
+        }
+    }
+}

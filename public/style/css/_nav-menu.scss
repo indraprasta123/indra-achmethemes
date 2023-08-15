@@ -1,0 +1,190 @@
+
+.head {
+    display: flex;
+    justify-content: center;
+    &--close-menu {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        opacity: 1;
+        z-index: 7;
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        .head__image {
+            display: none;
+        }
+        .head__nav {
+            display: flex;
+            justify-content: center;
+            align-items: normal;
+            background-color: black;
+        }
+        .head__ham-menu {
+            top: 25px;
+            right: 30px;
+        }
+        .head__button {
+            background-color: black;
+            &__bar:nth-child(1) {
+                display: block;
+                margin: 4px;
+                height: 3px;
+                width: 35px;
+                background: white;
+                border-radius: 9px;
+                transform: rotate(133deg) translateY(-3px) translateX(2px);
+            }
+            &__bar:nth-child(2) {
+                display: block;
+                margin: 4px;
+                height: 3px;
+                width: 35px;
+                background: white;
+                border-radius: 9px;
+                transform: rotate(44deg) translate(-1px, -4px);
+            }
+            &__bar:nth-child(3) {
+                display: none;
+            }
+        }
+        .head__menu {
+            display: flex;
+            text-align: center;
+            align-items: center;
+            height: auto;
+            position: absolute;
+            opacity: 1;
+            top: 15rem;
+            &__list {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+                padding: 0;
+                font-size: 2.5rem;
+                margin-right: 5rem;
+            }
+            &__link {
+                color: #666;
+                font-weight: bold;
+            }
+        }
+    }
+    &__nav {
+        background-color: #f3f8fc;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 30px;
+        align-items: center;
+        top: 0;
+        width: 100%;
+        height: 7rem;
+    }
+    &__image {
+        width: 20rem;
+        &__logo {
+            width: 100%;
+        }
+    }
+    &__menu {
+        transition: 1s ease-in;
+        width: 65%;
+        &__list{
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            gap: 25px;
+            transition: 1s ease-in;
+        }
+        &__item {
+            list-style: none;
+        }
+        &__link {
+            color: #666;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+        }
+        &__link:hover {
+            color: black;
+        }
+        #bold {
+            font-weight: bold;
+            color: #4f6df5;
+        }
+    }
+    &__button {
+        background-color: white;
+        border: none;
+        display: none;
+        &__bar:nth-child(1) {
+            display: block;
+            height: 3px;
+            width: 30px;
+            background: black;
+            border-radius: 9px;
+            transform: translateY(-3px);
+        }
+        &__bar:nth-child(2) {
+            display: block;
+            height: 3px;
+            width: 20px;
+            background: black;
+            transform: translate(0px, 5px);
+            border-radius: 9px;
+        }
+        &__bar:nth-child(3) {
+            display: block;
+            height: 3px;
+            width: 30px;
+            background: black;
+            border-radius: 9px;
+            transform: translate(0px, 13px);
+        }
+    }
+    &__ham-menu {
+        position: absolute;
+        right: 50px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .head__button {
+        display: block;
+    } 
+    .head__menu {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .head {
+        &__image {
+            width: 17rem;
+            margin-left: -15px;
+        }
+        &__ham-menu {
+            right: 24px;
+        }
+    }
+}
+
+@media (max-width: 1366px) {
+    html {
+        font-size: 75%;
+        height: 75%;
+    }
+}
+@media (max-width: 768px) {
+    html {
+        font-size: 65%;
+        height: 65%;
+    }
+}
+@media (max-width: 450px) {
+    html {
+        font-size: 55%;
+        height: 55%;
+    }
+}

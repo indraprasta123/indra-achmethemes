@@ -1,0 +1,24 @@
+.client {
+    margin-top: 2rem;
+    &__header {
+        text-align: center;
+        font-size: 2rem;
+        opacity: 1;
+    }
+    &__item {
+        opacity: 1;
+    }
+    &__feature {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width: 850px)  {
+    .client__feature {
+        display: block;
+        text-align: center;
+    }
+}
+
+    

@@ -1,0 +1,107 @@
+.contact {
+    background-color: white;
+    opacity: 1;
+    &__header {
+        text-align: center;
+        font-size: 2rem;
+    }
+    &__wrap-feature {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 8rem;
+    }
+    &__content {
+        &__entry-title {
+            font-size: 17px;
+            font-weight: 700;
+        }
+        &__panel {
+            margin-top: 7rem;
+        }
+        &__list {
+            padding: 0;
+        }
+        &__item {
+            display: flex;
+            flex-direction: column;
+            font-size: 14px;
+            margin-top: 4rem;
+            line-height: 20px;
+            color: #878787;
+            strong {
+                color: #4f6df5;
+            }
+            a {
+                color: #878787;
+            }
+        }
+    }
+    &__feature-form {
+        padding: 30px 30px 10px 30px;
+        box-shadow: 0 1px 41px rgba(0,0,0,.1);
+        margin-bottom: 4rem;
+        opacity: 1;
+    }
+    &__form-row {
+        &__col-md-6 {
+            margin-top: 2rem;
+        }
+        &__label {
+            font-size: 14px;
+            letter-spacing: 1px;
+            color: #878787;
+        }
+        &__input {
+            color: #000;
+            border: 1px solid #dddddd;
+            outline: medium none;
+            padding: 10px;
+            font-size: 15px;
+            // width: 100%;
+            border-radius: 5px;
+        }
+        &__send {
+            padding-left: 15px;
+        }
+        &__submit {
+            background-color: #4f6df5;
+            color: #fff;
+            border: 1px solid #4f6df5;
+            display: inline-block;
+            margin: 10px 0;
+            padding: 10px;
+            position: relative;
+            text-align: center;
+            border-radius: 50px;
+            width: 200px;
+        }
+    }
+}
+@media only screen and (max-width: 992px) {
+    .contact {
+        &__wrap-feature {
+            display: block;
+        }
+        &__feature-form {
+            padding: 30px 15px 10px 15px;
+            margin-top: 5rem;
+        }
+        &__form-row {
+            &__input {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .contact__form-row__input {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 380px)  {
+    textarea {
+        width: 90%;
+    }
+}

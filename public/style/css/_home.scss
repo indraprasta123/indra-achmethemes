@@ -1,0 +1,124 @@
+.home {
+    &__item {
+        background-image: url(https://demo.acmethemes.com/portfolio-web/wp-content/uploads/2019/01/portfolio_man_41920x800.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 48rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    &__content {
+        position: relative;
+        right: 24%;
+        bottom: 20%;
+        opacity: 1;
+    }
+    &__box {
+        display: flex;
+        &__view {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            width: 17rem;
+            height: 4rem;
+            border-radius: 6px;
+            font-size: 1.4rem;
+            text-decoration: none;
+            color: #4f6df5;
+            border: 1px solid #4f6df5;
+            transition: 0.4s ease-in;
+            &:hover {
+                background-color: #4f6df5;
+                color: white;
+                transition: 0.4s ease-in;
+            }
+            i {
+                margin-left: 1rem;
+            }
+        }
+        &__download {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 1rem;
+            background-color: #4f6df5;
+            color: white;
+            width: 17rem;
+            height: 4rem;
+            border-radius: 6px;
+            margin-left: 1rem;
+            font-size: 1.4rem;
+            text-decoration: none;
+            i {
+                margin-left: 1rem;
+            }
+        }
+    }
+    &__banner-title {
+        font-size: 6rem;
+        color: black;
+        font-weight: 700;
+    }
+    &__caption {
+        &__txt {
+            font-size: 1.2rem;
+            letter-spacing: 7px;
+            color: #666666;
+            font-weight: 500;
+        }
+    }  
+}
+
+//Responsive
+
+@media (max-width: 997px) {
+    .home {
+        &__content {
+            bottom: 0;
+            right: 22%;
+        }
+        &__banner-title {
+            font-size: 3rem;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .home {
+        &__box {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 465px) {
+    .home {
+        &__content {
+            bottom: 0;
+            right: 15%;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .home {
+        &__content {
+            bottom: 0;
+            right: 10%;
+        }
+    }
+}
+
+@keyframes move {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
