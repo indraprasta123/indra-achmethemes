@@ -21,25 +21,26 @@
             background-color: black;
         }
         .head__ham-menu {
-            top: 25px;
-            right: 30px;
+            top: 30px;
+            right: 10px;
+            position: absolute;
         }
         .head__button {
             background-color: black;
             &__bar:nth-child(1) {
                 display: block;
                 margin: 4px;
-                height: 3px;
-                width: 35px;
+                height: 2px;
+                width: 20px;
                 background: white;
                 border-radius: 9px;
-                transform: rotate(133deg) translateY(-3px) translateX(2px);
+                transform: rotate(133deg) translateY(-3px) translateX(1px);
             }
             &__bar:nth-child(2) {
                 display: block;
                 margin: 4px;
-                height: 3px;
-                width: 35px;
+                height: 2px;
+                width: 20px;
                 background: white;
                 border-radius: 9px;
                 transform: rotate(44deg) translate(-1px, -4px);
@@ -53,7 +54,6 @@
             text-align: center;
             align-items: center;
             height: auto;
-            position: absolute;
             opacity: 1;
             top: 15rem;
             &__list {
@@ -62,8 +62,7 @@
                 align-items: center;
                 gap: 20px;
                 padding: 0;
-                font-size: 2.5rem;
-                margin-right: 5rem;
+                font-size: 40px;
             }
             &__link {
                 color: #666;
@@ -75,7 +74,7 @@
         background-color: #f3f8fc;
         display: flex;
         justify-content: space-between;
-        padding-left: 30px;
+        padding: 0px 10px;
         align-items: center;
         top: 0;
         width: 100%;
@@ -120,24 +119,24 @@
         display: none;
         &__bar:nth-child(1) {
             display: block;
-            height: 3px;
-            width: 30px;
+            height: 2px;
+            width: 20px;
             background: black;
             border-radius: 9px;
             transform: translateY(-3px);
         }
         &__bar:nth-child(2) {
             display: block;
-            height: 3px;
-            width: 20px;
+            height: 2px;
+            width: 10px;
             background: black;
             transform: translate(0px, 5px);
             border-radius: 9px;
         }
         &__bar:nth-child(3) {
             display: block;
-            height: 3px;
-            width: 30px;
+            height: 2px;
+            width: 20px;
             background: black;
             border-radius: 9px;
             transform: translate(0px, 13px);
